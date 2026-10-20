@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p{
+            margin: 0 0 10px;
+        }
+        section span {
+            display: block ;
+            padding: 8px
+        }
+        section span:nth-child(2) {
+            background: red;
+        }
+        section span:nth-of-type(2) {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diferença entre :nth-child() e :nth-of-type() </h1>
+    <section>
+        <p>Sou um paragráfo (1° filho).</p>
+        <span>Primeiro span (2° filho): fundo vermelho-claro.</span>
+        <span>Segundo span (3° filho): borda azul.</span>
+        <span>Terceiro span (4° filho).</span>
+    </section>
+</body>
+</html>
